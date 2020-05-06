@@ -24,7 +24,7 @@ We will also apply flow-based programming concept to this project. [2] In comput
 The project also plans to evaluate our application on TCP/IP and NDN (Named-data Networking) protocols to see what difference will they make in terms of the latency and the network bandwidth. The core innovation in Information Centric Networking (ICN) including Named Data Networking (NDN) is the use of application-level names as the identifier for network packets. This allows the network to identify data independent of a particular connection, and to retrieve desired data from anywhere instead of a single given host. NDN network also supports in-network caching and built-in security. NDN directly secures the data in layer2 which is more convenient and secure for the application developer.
 
 <p align="center">
-    <img src="../final-project/figures/nodered.jpeg"/>
+    <img src="./figures/nodered.jpeg"/>
 </p>
 
 ## 3. Related work
@@ -39,19 +39,19 @@ Figure 3 describes the cloud computing scenario. In this case, the deep neural n
 Figure 4 represents the edge computing paradigm. In this scenario, we try to offload some of the services from the cloud server to the edge devices. In our case, we try to put part of the deep neural network on the edge devices and the rest still stay on the cloud server. We can apply some early exist logic to the deep neural network, if the classifier is confident enough about the input data at the early stage of the deep neural network, and assuming this early stage stays at the edge devices, the edge device can immediately send back the final result. Otherwise, the processed data will be transmitted to the cloud server and finish the rest of the classification. In this case, the bandwidth can be reduces since we are not sending all the raw data through the network to the cloud server and the data privacy can be protected as well because we are sending the processed data instead of the raw data, it's almost impossible for the service provider to figure out the practical meaning of these processed data. Besides, since the result may be produced early by the edge devices, the user may experience a lower latency. One challenge of applying edge computing paradigm to deep neural network is how do we separate the deep neural network - which layers should be put on the cloud, which layers should be put on the edge devices and which layers should stay locally on the user devices. For this project, to evaluate the architures with different internet protocol , we plan to reuse the idea in [3].
 
 <p align="center">
-    <img src="../final-project/figures/local.png" width="300" height="180"/>
+    <img src="./figures/local.png" width="300" height="180"/>
     <br>
     <span>Figure 2. Local Computing</span>
 </p>
 
 <p align="center">
-    <img src="../final-project/figures/cloud.png" width="300" height="180"/>
+    <img src="./figures/cloud.png" width="300" height="180"/>
     <br>
     <span>Figure 3. Cloud Computing Paradigm</span>
 </p>
 
 <p align="center">
-    <img src="../final-project/figures/edge.png" width="300" height="180"/>
+    <img src="./figures/edge.png" width="300" height="180"/>
     <br>
     <span>Figure 4. Edge Computing Paradigm</span>
 </p>
